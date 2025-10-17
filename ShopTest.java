@@ -1,19 +1,18 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class ShopTest {
     @Test
     public void testBuy() throws Exception{
         ResaleShop shop = new ResaleShop();
-        
-        shop.buy(null);
         ArrayList<Computer> inventory = shop.inventory;
         Computer compInInventory = inventory.get(0);
-
-        assertEquals("Computer is already in the inventory", compInInventory,  compInInventory);
+        
+        assertTrue("computer is in inventory", shop.inventory.contains(compInInventory));
+        shop.buy(null);
+        assertTrue("computer is bought", shop.inventory.contains(compInInventory));
     }
 
     @Test
@@ -57,15 +56,14 @@ public class ShopTest {
         ResaleShop shop = new ResaleShop();
 
         shop.buy(null);
-
         ArrayList<Computer> inventory = shop.inventory;
-
         Computer compInInventory = inventory.get(0);
 
         shop.refurbish(compInInventory, "macOS Big Sur");
 
         assertEquals("OS didn't change", "macOS Big Sur", "High Sierra");
     }
+
     public void main(String args[]) throws Exception{
         testBuy();
         testSell();
