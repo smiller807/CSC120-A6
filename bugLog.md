@@ -1,10 +1,10 @@
 ## Bug 1
-Brief description:  
-Failed unit test: 
+Brief description:  The buy method doesn't account for computers already in the inventory
+Failed unit test: testBuy()
 
 ## Bug 2
-Brief description:  
-Failed unit test: 
+Brief description:  The sell method doesnt accout for if a computer isn't in the inventory
+Failed unit test: testSell()
 
 ## Bug 3
 Brief description:  
