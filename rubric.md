@@ -15,21 +15,21 @@ _____ 10 pts: The class contains at least 10 unit tests that identify bugs in th
 
 ## General Items:
 
-_____ 4 pts: Programs compile without errors or warnings
+**YES** 4 pts: Programs compile without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+**YES** 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       _____ Classes & class members all have Javadoc header comments
 
-      _____ Clear and consistent indentation of bracketed sections
+      **YES** Clear and consistent indentation of bracketed sections
 
-      _____ Adheres to Java conventions on naming & capitalization
+      **YES** Adheres to Java conventions on naming & capitalization
 
-      _____ Methods & variables all have clear and accurate names
+      **YES** Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      **YES** Methods avoid confusing side effects
 
 _____ 1 pt: All required files included with submission (including completed `rubric.md` file)
 
